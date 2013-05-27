@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0.rc1'
+gem 'mysql2'
 gem 'jquery-rails'
-gem 'mongoid'
-gem 'bson_ext'
 gem 'turbolinks'
 gem 'slim'
 gem 'simple_form'
@@ -30,7 +29,7 @@ group :test do
   gem 'factory_girl'
   gem 'capybara-puma'
   gem 'capybara-webkit'
-  #gem 'mongoid-rspec'
+  gem 'shoulda-matchers'
   gem 'fuubar'
   gem 'database_cleaner'
   gem 'rb-inotify', :require => false
