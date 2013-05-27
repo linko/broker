@@ -9,15 +9,16 @@ gem 'simple_form'
 gem 'inherited_resources'
 gem 'has_scope'
 gem 'devise'
-#gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-#gem 'mini_magick'
-#gem 'show_for'
+gem 'enumerize'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'show_for'
 
 
 group :development do
-  #gem 'letter_opener'
+  gem 'letter_opener'
   gem 'puma'
-  #gem 'awesome_print'
+  gem 'awesome_print'
   gem 'rails_dt'
 end
 
