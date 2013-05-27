@@ -1,45 +1,51 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'mongoid'
+gem 'bson_ext'
 gem 'turbolinks'
+gem 'slim'
+gem 'simple_form'
+gem 'inherited_resources'
+gem 'has_scope'
+gem 'devise'
+#gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+#gem 'mini_magick'
+#gem 'show_for'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.0.1'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+group :development do
+  #gem 'letter_opener'
+  gem 'puma'
+  #gem 'awesome_print'
+  gem 'rails_dt'
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+group :test do
+  gem 'rspec-rails'
+  gem 'rspec-instafail'
+  gem 'rspec-given'
+  gem 'faker'
+  gem 'factory_girl'
+  gem 'capybara-puma'
+  gem 'capybara-webkit'
+  #gem 'mongoid-rspec'
+  gem 'fuubar'
+  gem 'database_cleaner'
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+  gem 'libnotify'
+  gem 'launchy', :require => false
+  gem 'simplecov', :require => false
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+group :assets do
+  gem 'therubyracer', :platform => :ruby
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+  gem 'jquery-ui-rails'
+  gem 'bootstrap-sass'
+end
