@@ -11,5 +11,4 @@ class Car < ActiveRecord::Base
   validates :car_type, inclusion: car_type.values
 
   validates :brand, :name, length: { maximum: 255 }
-
 end
