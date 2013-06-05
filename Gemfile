@@ -6,7 +6,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'slim'
 gem 'simple_form'
-gem 'inherited_resources'
+gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'has_scope'
 gem 'devise'
 gem 'enumerize'
@@ -15,10 +15,15 @@ gem 'mini_magick'
 gem 'show_for'
 
 
+
+
 group :development do
   gem 'letter_opener'
   gem 'puma'
   gem 'awesome_print'
+end
+
+group :development, :test do
   gem 'rails_dt'
 end
 
@@ -27,7 +32,7 @@ group :test do
   gem 'rspec-instafail'
   gem 'rspec-given'
   gem 'faker'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'capybara-puma'
   gem 'capybara-webkit'
   gem 'shoulda-matchers'
