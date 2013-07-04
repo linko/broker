@@ -14,9 +14,6 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'show_for'
 
-
-
-
 group :development do
   gem 'letter_opener'
   gem 'puma'
@@ -25,6 +22,7 @@ end
 
 group :development, :test do
   gem 'rails_dt'
+  gem 'guard'
 end
 
 group :test do
